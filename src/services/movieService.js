@@ -14,6 +14,7 @@ exports.getAll=()=>{
     return movie;
 }
 exports.create = (movieData)=>{
+    movieData._id=movie[movie.length-1]._id+1;
     movie.push(movieData);
 
 }
