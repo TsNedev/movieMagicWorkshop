@@ -10,6 +10,8 @@ router.get('/create',(req,res)=>{
 router.post('/create',(req,res)=>{
     const nweMovie = req.body;
     movieService.create(nweMovie);  
+
+    res.redirect('/');
 })
 
 module.exports= router; 
