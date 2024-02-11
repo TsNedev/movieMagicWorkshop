@@ -3,6 +3,8 @@ function configExpress (app){
     
     const path = require('path');
     app.use(express.static(path.resolve('src/static')));
+
+    app.use(express.urlencoded({extended:false}));
     return app;
 }
 
