@@ -11,7 +11,7 @@ router.get('/',(req,res)=>{
     res.render(`home`,{movies});
     });
 
-    router.get('/about/{{_id}}',(req,res)=>{
+    router.get('/about',(req,res)=>{
         res.render(`about`);
     })
 

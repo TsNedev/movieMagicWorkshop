@@ -1,5 +1,6 @@
 
 const movie = [{
+    _id:1,
     title: 'fsfes',
     genre: 'sefes',
     director: 'sefes',
@@ -8,6 +9,8 @@ const movie = [{
     rating: '',
     description: ''
   }];
+
+
 
 exports.getAll=()=>{
 
@@ -18,4 +21,10 @@ exports.create = (movieData)=>{
     movie.push(movieData);
 
 }
+exports.getOne = (movieId) =>{
+
+   return movie.find(movie=>movie._id==movieId);
+  
+    
+  }
 
